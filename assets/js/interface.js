@@ -189,7 +189,7 @@ Sponsors Slider
 			horizontalAlign: 'center',
 			backgroundColor: '#d3cfcf',
 			infoWindow:{
-				content: '<h6>Bull Street Labs</h6><div class="map-info">2222 Bull St.<br>Savannah, Ga. 31401</div>'
+				content: '<h6>Bull Street Labs</h6><a href="http://bullstreetlabs.com">Learn more</a><div class="map-info">2222 Bull St.<br>Savannah, Ga. 31401</div>'
 			}
 		});
 	}
