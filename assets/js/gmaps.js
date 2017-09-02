@@ -174,8 +174,7 @@ var GMaps = (function(global) {
    */
    
    
-   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA724kt7SgY5UuPuhGvMl-dDi6VGitC6eY&callback=initMap"
-  type="text/javascript"></script>
+ 
 
   var GMaps = function(options) {
 
