@@ -1,4 +1,4 @@
-﻿( function($) {
+( function($) {
   'use strict';
 $(function(e) {
 /*-------------------------------------------------------------------------------
@@ -169,7 +169,7 @@ Sponsors Slider
 			lat: 32.055664,
 			lng: -81.100521,
 			scrollwheel:false,
-			zoom: 10,
+			zoom: 12,
 			zoomControl : true,
 			panControl : false,
 			streetViewControl : false,
