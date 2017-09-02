@@ -166,10 +166,10 @@ Sponsors Slider
 		var map;
 		map = new GMaps({
 			el: '#js-gmap',
-			lat: -23.976215,
-			lng:133.769531,
+			lat: 32.055664,
+			lng: -81.100521,
 			scrollwheel:false,
-			zoom: 4,
+			zoom: 10,
 			zoomControl : true,
 			panControl : false,
 			streetViewControl : false,
@@ -177,19 +177,19 @@ Sponsors Slider
 			overviewMapControl: false,
 			clickable: false
 		});
-		var image = 'assets/images/map-label.png';
+		var image = 'https://s3.amazonaws.com/cvlassets/hackforsav%20copy.png';
 		var infoWindow = new google.maps.InfoWindow({
 		});
 		map.addMarker({
-			lat: -23.976215,
-			lng:133.769531,
+			lat: 32.055664,
+			lng:-81.100521,
 			icon: image,
 			animation: google.maps.Animation.DROP,
 			verticalAlign: 'bottom',
 			horizontalAlign: 'center',
 			backgroundColor: '#d3cfcf',
 			infoWindow:{
-				content: '<div class="map-info">PO Box 1025MNO Collins Street<br>West Victoria 8007 Australia</div>'
+				content: '<h6>Bull Street Labs</h6><div class="map-info">2222 Bull St.<br>Savannah, Ga. 31401</div>'
 			}
 		});
 	}
