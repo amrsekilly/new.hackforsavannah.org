@@ -172,12 +172,19 @@ var GMaps = (function(global) {
    * * `el` (string or HTMLElement): container where the map will be rendered
    * * `markerClusterer` (function): A function to create a marker cluster. You can use MarkerClusterer or MarkerClustererPlus.
    */
+   
+   
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA724kt7SgY5UuPuhGvMl-dDi6VGitC6eY&callback=initMap"
+  type="text/javascript"></script>
+
   var GMaps = function(options) {
 
     if (!(typeof window.google === 'object' && window.google.maps)) {
       if (typeof window.console === 'object' && window.console.error) {
         console.error('Google Maps API is required. Please register the following JavaScript library https://maps.googleapis.com/maps/api/js.');
       }
+      
+      
 
       return function() {};
     }
