@@ -6,10 +6,9 @@
         <div class="col-sm-7 col-md-7 col-lg-8">
           <div class="banner-content">
             <div class="banner-tagline">
-              <h1>Hack for Savannah 2017</h1>
-              <p>Sept. 22-24, 2017 @ Bull Street Labs</p>
-                    <p>An <a href="https://opensavannah.org">Open Savannah</a> event with support from SEDA to mark Code for America's annual <a href="http://ndoch.us"> National Day of Civic Hacking</a></p>
-
+              <h1>{{site.eventName}}</h1>
+              <p>{{site.eventDate}}</p>
+              <p>An <a href="{{site.opensavannahURL}}">Open Savannah</a> event with support from SEDA to mark Code for America's annual <a href="http://ndoch.us"> National Day of Civic Hacking</a></p>
             </div>
           </div>
         </div>
@@ -17,9 +16,9 @@
           <div class="banner-form">
             <h4>Reserve Your Seat</h4>
             <!--Eventbrite-Widgets-Code-->
-
-
-<div style="width:195px; text-align:center; margin: 0 auto;" ><iframe  src="https://www.eventbrite.com/countdown-widget?eid=37262881281" frameborder="0" height="257" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;" ></div></div>
+            <div style="width:195px; text-align:center; margin: 0 auto;"><iframe src="{{site.Eventbrite}}" frameborder="0" height="257" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+              <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;"></div>
+            </div>
             <!--/Eventbrite-Widgets-Code-->
           </div>
         </div>
@@ -36,9 +35,8 @@
   <div class="col-sm-6 col-md-6  primary-bg vc_col">
     <div class="timer_wrap padding_50px text-center">
       <h6>Hackathon takes place</h6>
-      <p class="conference_date">Sept. 22-24 @ 2222 Bull St.</p>
-      <p>Check-in, kickoff reception and panel begins at 6:00 p.m. Friday.</p>
-
+      <p class="conference_date">{{site.conference_date}}</p>
+      <p>{{site.checkin}}</p>
     </div>
   </div>
   <div class="col-sm-6 col-md-6 secondary-bg vc_col">
@@ -60,7 +58,7 @@
         <div class="heading-sec">
           <div class="section-header text-center">
             <h2>Hack for Savannah Event Overview</h2>
-            <em>Details, judging criteria, venue, hosts, team formation. </em>
+            <em>Details, judging criteria, venue, hosts, team formation.</em>
           </div>
         </div>
       </div>
@@ -68,49 +66,59 @@
     </div>
 
     <div class="about-m-content row">
-        <div class="col-md-8">
-            <img src="https://cvlassets.s3.amazonaws.com/0817-open_savannah_sav_maps-13.jpg" alt="image">
-            <caption><em>More than 45 Open Savannah brigade members and community residents got together Aug, 9 for a hacknight dubbed "SavMaps," in which they mapped out all social service resources in Chatham County in less than three hours.</em><a href="https://savmaps.io"> Check out what they built>></a></caption><br><br/>
-            <blockquote>"There is no expertise more valuable than locality knowledge." - Jane Jacobs</blockquote>
-              <h6>Who should come/what if I'm not a coder?</h6>
-              <p>If you’re passionate about Savannah, if you think you can help make it more democratic, and if you believe in the power of code to facilitate change, you should come! Civic hacking and hackathons benefit from participants of all types of backgrounds and levels of expertise. Even those with no technological skills at all can play vital roles in researching, designing, and launching projects. Subject-matter experts are essential to the quality, sustainability, and scalability of a project. Content experts and partner organizations contribute extensive, nuanced knowledge of the subject matter; they help guide and structure a project so that it tackles key needs, creating the greatest possible impact. No specific technological skillsets will be needed for you to make a meaningful contribution to the hackathon.
- </p>
+      <div class="col-md-8">
+        <img src="{{site.overviewImg}}" alt="Event Overview Image">
+        <caption><em>More than 45 Open Savannah brigade members and community residents got together Aug, 9 for a hacknight dubbed "SavMaps," in which they mapped out all social service resources in Chatham County in less than three hours.</em><a href="https://savmaps.io"> Check out what they built>></a></caption><br><br/>
+        <blockquote>"There is no expertise more valuable than locality knowledge." - Jane Jacobs</blockquote>
+        <h6>Who should come/what if I'm not a coder?</h6>
+        <p>If you’re passionate about Savannah, if you think you can help make it more democratic, and if you believe in the power of code to facilitate change, you should come! Civic hacking and hackathons benefit from participants of all types of backgrounds
+          and levels of expertise. Even those with no technological skills at all can play vital roles in researching, designing, and launching projects. Subject-matter experts are essential to the quality, sustainability, and scalability of a project.
+          Content experts and partner organizations contribute extensive, nuanced knowledge of the subject matter; they help guide and structure a project so that it tackles key needs, creating the greatest possible impact. No specific technological skillsets
+          will be needed for you to make a meaningful contribution to the hackathon.
+        </p>
 
-          </div>
-          <div class="col-md-4">
-            <h5>Want to help build <a href="https://github.com/opensavannah">stuff that matters</a>? Want to have a <a href="https://photos.app.goo.gl/D2hkIXsEdCM0twwO2">fun time</a> meeting <a href="https://www.meetup.com/OpenSavannah/members/">new. interesting, and creative people</a> from the Savannah area? Want a chance to win up to $3,500 doing it?</h5>
+      </div>
+      <div class="col-md-4">
+        <h5>Want to help build <a href="{{site.openSavannahGH}}">stuff that matters</a>? Want to have a <a href="{{site.funTime}}">fun time</a> meeting <a href="{{site.creativePeople}}">new. interesting, and creative people</a> from the Savannah area? Want a chance to win up to $3,500 doing it?</h5>
 
-              <p>Open Savannah’s first-annual “Hack for Savannah” civic hackathon (see <a href="https://opensavannah.org/what-is-a-civic-hackathon">What is a civic hackathon?”</a>) is absolutely <strong>free to participate in</strong>, and the civic technological solutions you build could end up being officially adopted by the City of Savannah or Chatham County.</p>
-                <p>The hackathon is being held to mark <a href="http://codeforamerica.org">Code for America</a>'s annual <a href="http://ndoch.us">National Day of Civic Hacking</a>, an annual day of action to convene coders, bureaucrats, data scientists, journalists, user experience designers, and community activists to tackle big problems.</p>
-                <h6>What is a hackathon?</h6>
-                <p>Simply put, and as the name might suggest, hackathons are hacking marathons. This means that we get together for a weekend to create new projects from the ideation stage to functional (or at least semi-functional) prototypes. It’s also a great excuse to eat food, drink lots of coffee, hang out with friends and meet new people.</p>
-            </div>
+        <p>Open Savannah’s first-annual “Hack for Savannah” civic hackathon (see <a href="{{site.civicHackathon}}">What is a civic hackathon?”</a>) is absolutely <strong>free to participate in</strong>, and the civic technological
+          solutions you build could end up being officially adopted by the City of Savannah or Chatham County.</p>
+        <p>The hackathon is being held to mark <a href="{{site.codeForAmerica}}">Code for America</a>'s annual <a href="http://ndoch.us">National Day of Civic Hacking</a>, an annual day of action to convene coders, bureaucrats, data scientists, journalists,
+          user experience designers, and community activists to tackle big problems.</p>
+        <h6>What is a hackathon?</h6>
+        <p>Simply put, and as the name might suggest, hackathons are hacking marathons. This means that we get together for a weekend to create new projects from the ideation stage to functional (or at least semi-functional) prototypes. It’s also a great
+          excuse to eat food, drink lots of coffee, hang out with friends and meet new people.</p>
+      </div>
 
     </div>
 
     <div class="row">
       <div class="col-md-4">
-          <div class="info_wrap">
-                <i class="fa fa-fire-extinguisher" aria-hidden="true"></i>
-                <h5>Who We Are</h5>
-                <p><a href="https://opensavannah.org">Open Savannah</a>, the official local brigade of <a href="http://codeforamerica.org">Code for America</a>. We're a diverse and inclusive mix of civic-minded individuals from a variety of backgrounds who share the common belief that we can make government work better "by the people, for the people, of the people, in the 21st Century."</p>
-            </div>
+        <div class="info_wrap">
+          <i class="fa fa-fire-extinguisher" aria-hidden="true"></i>
+          <h5>Who We Are</h5>
+          <p><a href="{{site.opensavannahURL}}">Open Savannah</a>, the official local brigade of <a href="{{site.codeForAmerica}}">Code for America</a>. We're a diverse and inclusive mix of civic-minded individuals from a variety of backgrounds who share
+            the common belief that we can make government work better "by the people, for the people, of the people, in the 21st Century."</p>
+        </div>
       </div>
 
-        <div class="col-md-4">
-          <div class="info_wrap">
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-                <h5>What you get</h5>
-                <p>Aside from the feeling of having built something useful that improves the community, all participants will receive a healthy dose of SWAG (stickers!), access to all project assets, a cool project to add to their resume and, if your team wins, a healthy cash prize to take home! The winning team will also receive free tuition to ATDC's Startup Bootcamp.</p>
-            </div>
+      <div class="col-md-4">
+        <div class="info_wrap">
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <h5>What you get</h5>
+          <p>Aside from the feeling of having built something useful that improves the community, all participants will receive a healthy dose of SWAG (stickers!), access to all project assets, a cool project to add to their resume and, if your team wins,
+            a healthy cash prize to take home! The winning team will also receive free tuition to ATDC's Startup Bootcamp.</p>
+        </div>
       </div>
 
-        <div class="col-md-4">
-          <div class="info_wrap">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-                <h5>What We Do</h5>
-                <p>We meet regularly to work on civic-technology projects that best fit the needs of the entire Savannah community. Whether it's building a <a href="https://savbook.io"> mobile resource directory for social services </a> or breaking down the <a href="http://openbudgetsav.org">City's budget data</a>, we play with civic apps and do a mix of project management, coding, documentation, event planning and designing.</p>
-            </div>
+      <div class="col-md-4">
+        <div class="info_wrap">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+          <h5>What We Do</h5>
+          <p>We meet regularly to work on civic-technology projects that best fit the needs of the entire Savannah community. Whether it's building a <a href="{{site.savbook}}"> mobile resource directory for social services </a> or breaking down the
+            <a
+              href="{{site.openbudgetsav}}">City's budget data</a>, we play with civic apps and do a mix of project management, coding, documentation, event planning and designing.</p>
+        </div>
       </div>
     </div>
 
@@ -138,23 +146,24 @@
       <div class="col-md-7 col-lg-6">
         <div class="about-m-content">
           <h5>How will it work?</h5>
-          <p>Participants will work in teams of no more than five (5) individuals over two days to develop civic-tech product and startup ideas that make a difference, with an additional prize bracket for the team with the best functional prototype. Winning teams will receive a total of $6K in cash prizes, courtesy of the generosity of Savannnah Economic Development Authority (SEDA).</p>
+          <p>Participants will work in teams of no more than five (5) individuals over two days to develop civic-tech product and startup ideas that make a difference, with an additional prize bracket for the team with the best functional prototype. Winning
+            teams will receive a total of $6K in cash prizes, courtesy of the generosity of Savannnah Economic Development Authority (SEDA).</p>
           <h5>The Basic Details</h5>
           <ul class="list_style_none">
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>All food and meals will be provided thanks to the generosity of our sponsors.</li>
-            <li><i class="fa fa-check-circle" aria-hidden="true"></i>The event is BYOD {"bring your own device"). Please <a href="mailto: yall@opensavannah.org">notify</a> us by Sept. 16 if you don't have a laptop and we will seek to provide you one. </li>
+            <li><i class="fa fa-check-circle" aria-hidden="true"></i>The event is BYOD {"bring your own device"). Please <a href="mailto: {{site.email}}">notify</a> us by Sept. 16 if you don't have a laptop and we will seek to provide you one. </li>
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>This is not an official City of Savannah event, but City Officials will be present to help judge and answer questions.</li>
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>Four cash prizes will be awarded. First, second and third place teams will each receive $2,500, $1,500 and $1,000, respectively.</li>
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>A separate $1,000 prize will go to the team with the strongest functional prototype to display.</li>
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>The theme and the specific civic app challenge for the hackathon will be announced Friday evening (Sept. 22) at the kickoff reception.</li>
           </ul>
         </div>
-        </div>
-        <div class="col-md-5 col-lg-6">
-        <div class="row">
-<a class="twitter-timeline" height="760" href="https://twitter.com/open_savannah/lists/open-savannah-leadership">A Twitter List by open_savannah</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-
+      <div class="col-md-5 col-lg-6">
+        <div class="row">
+          <a class="twitter-timeline" height="760" href="{{site.twitterList}}">A Twitter List by open_savannah</a>
+          <script async src="{{site.twitterWidget}}" charset="utf-8"></script>
+        </div>
       </div>
     </div>
   </div>
@@ -168,18 +177,11 @@
     <div class="row">
       <div class="conference-m-box div_zindex">
         <div class="conf-icon-m">
-          <div class="col-sm-3 col-xs-6">
-            <div class="spekers-tickets-info"> <i class="fa fa-microphone"></i> <span class="summary">7 expert judges</span> </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="spekers-tickets-info"> <i class="fa fa-ticket"></i> <span class="summary">100 ticket limit</span> </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="spekers-tickets-info"> <i class="fa fa-money"></i> <span class="summary">$6000 in cash prizes</span> </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="spekers-tickets-info"> <i class="fa fa-calendar-check-o"></i> <span class="summary">1.5 days of hacking</span> </div>
-          </div>
+          {% for ticket in site.spekers-tickets-info %}
+            <div class="col-sm-3 col-xs-6">
+              <div class="spekers-tickets-info"> <i class="fa {{ticket.icon}}"></i> <span class="summary">{{ticket.title}}</span> </div>
+            </div>
+          {% endfor %}
         </div>
         <div class="resever-today text-center">
           <h2>Form your own team, or be assigned to a team upon arrival based on an equal distribution of skillsets at the event kickoff.</h2>
@@ -194,7 +196,7 @@
 <!--Conference Gallery-->
 
 
-    <!-- Event Gallery -->
+<!-- Event Gallery -->
 
 
 <!-- About-Style-3 -->
@@ -206,7 +208,6 @@
         <div class="heading-sec">
           <div class="section-header text-center">
             <h2>Hackathon Myths</h2>
-
           </div>
         </div>
       </div>
@@ -214,55 +215,57 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-         <div class="vertical_list">
+        <div class="vertical_list">
           <div class="list_icon">
-              <i class="fa fa-bullhorn" aria-hidden="true"></i>
-            </div>
-            <h5>It's all about the product</h5>
-            <p>When the term hackathon comes to mind, we tend to think solely of which team has the strongest <em>deliverable</em>. At their core, hackathons are about devising a feasible, effective, smart solution that involves far more than programming neat software. They require a strong pitch, a clear competitive advantage, and an in-depth analysis of the solution.</p>
-         </div>
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+          </div>
+          <h5>It's all about the product</h5>
+          <p>When the term hackathon comes to mind, we tend to think solely of which team has the strongest <em>deliverable</em>. At their core, hackathons are about devising a feasible, effective, smart solution that involves far more than programming neat
+            software. They require a strong pitch, a clear competitive advantage, and an in-depth analysis of the solution.</p>
+        </div>
 
       </div>
 
       <div class="col-md-6">
-         <div class="vertical_list">
+        <div class="vertical_list">
           <div class="list_icon">
-              <i class="fa fa-registered" aria-hidden="true"></i>
-            </div>
-            <h5>Everyone who attends is a 'computer' person</h5>
-            <p>This myth couldn't be further from the truth, and it creates a dangerous self-fulfilling prophecy when people opt not to participate simply because they don't <em>know how to CD into the root directory and CHMOD the file permissions to 755</em>. For true success, especially in a <em>civic</em> hackathon, a diversity of skillsets will be needed. Just because you can't write a complex JavaScript app using Angular 2 doesn't mean you can't contribute to the team's project meaningfully.</p>
-         </div>
+            <i class="fa fa-registered" aria-hidden="true"></i>
+          </div>
+          <h5>Everyone who attends is a 'computer' person</h5>
+          <p>This myth couldn't be further from the truth, and it creates a dangerous self-fulfilling prophecy when people opt not to participate simply because they don't <em>know how to CD into the root directory and CHMOD the file permissions to 755</em>.
+            For true success, especially in a <em>civic</em> hackathon, a diversity of skillsets will be needed. Just because you can't write a complex JavaScript app using Angular 2 doesn't mean you can't contribute to the team's project meaningfully.</p>
+        </div>
 
       </div>
 
       <div class="col-md-6">
-         <div class="vertical_list">
+        <div class="vertical_list">
           <div class="list_icon">
-              <i class="fa fa-bolt" aria-hidden="true"></i>
-            </div>
-            <h5>It's all about winning</h5>
-            <p>Hackathons are ideal learning environments, testing your critical thinking skills and ability to solve problems creatively under tight deadlines. And if you haven't put much critical thought into <em>why</em> you would build something a certain way, it doesn't matter how sleek it is to use or what fancy new JavaScript framework it uses.</p>
-         </div>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+          </div>
+          <h5>It's all about winning</h5>
+          <p>Hackathons are ideal learning environments, testing your critical thinking skills and ability to solve problems creatively under tight deadlines. And if you haven't put much critical thought into <em>why</em> you would build something a certain
+            way, it doesn't matter how sleek it is to use or what fancy new JavaScript framework it uses.</p>
+        </div>
 
       </div>
 
       <div class="col-md-6">
-         <div class="vertical_list">
+        <div class="vertical_list">
           <div class="list_icon">
-              <i class="fa fa-street-view" aria-hidden="true"></i>
-            </div>
-            <h5>You have to pull an all-nighter and/or stay up overnight.</h5>
-            <p>While event volunteers will be at Bull Street Labs to assist teams in shifts throughout the entirety of the night, teams by no means <em>have</em> to stay at BSL or go without sleep to finish in time. Sleep is important. It makes the brain function quicker. Go home and rest Saturday night if you can. At the very least, get a quick shut-eye on a couch at BSL, if nothing else!</p>
-         </div>
-
+            <i class="fa fa-street-view" aria-hidden="true"></i>
+          </div>
+          <h5>You have to pull an all-nighter and/or stay up overnight.</h5>
+          <p>While event volunteers will be at Bull Street Labs to assist teams in shifts throughout the entirety of the night, teams by no means <em>have</em> to stay at BSL or go without sleep to finish in time. Sleep is important. It makes the brain function
+            quicker. Go home and rest Saturday night if you can. At the very least, get a quick shut-eye on a couch at BSL, if nothing else!</p>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
-    <!-- /Event Gallery -->
+<!-- /Event Gallery -->
 
-  </div>
+</div>
 </section>
 <!--/Conference Gallery-->
 
@@ -282,13 +285,13 @@
 
       <div class="col-md-12">
         <div class="row">
-          <div class="col-md-12 text-right"> <a href="https://s3.amazonaws.com/cvlassets/hackforsavannah.pdf" target="_blank" <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Schedule</a> </div>
+          <div class="col-md-12 text-right"> <a href="{{site.downloadSchedule}}" target="_blank" <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Schedule</a> </div>
           <div class="col-sm-4 col-md-4">
             <!-- Nav tabs -->
             <ul class="nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#day1" role="tab" data-toggle="tab">Day One - Sept. 22, 2017</a></li>
-              <li role="presentation"><a href="#day2" role="tab" data-toggle="tab">Day Two - Sept. 23, 2017</a></li>
-              <li role="presentation"><a href="#day3" role="tab" data-toggle="tab">Day Three - Sept. 24, 2017</a></li>
+              <li role="presentation" class="active"><a href="#day1" role="tab" data-toggle="tab">Day One - {{site.dayOneDate}}</a></li>
+              <li role="presentation"><a href="#day2" role="tab" data-toggle="tab">Day Two - {{site.dayTwoDate}}</a></li>
+              <li role="presentation"><a href="#day3" role="tab" data-toggle="tab">Day Three - {{site.dayThreeDate}}</a></li>
             </ul>
           </div>
           <div class="col-sm-8 col-md-8">
@@ -323,11 +326,12 @@
                   </div>
                   <div class="schedule_info">
                     <h4>How The Weekend Will Work</h4>
-                    <p>To kick things off, our organizers will go over with participants the structure and timeline of the weekend. After that, groups are free to start planning their strategy and moving forward. Bull Street Labs' doors will close at midnight and reopen at 8 a.m. </p>
+                    <p>To kick things off, our organizers will go over with participants the structure and timeline of the weekend. After that, groups are free to start planning their strategy and moving forward. Bull Street Labs' doors will close at midnight
+                      and reopen at 8 a.m. </p>
                   </div>
                 </div>
 
-                </div>
+              </div>
 
               <!-- Day 2 Schedule -->
               <div role="tabpanel" class="tab-pane" id="day2">
@@ -337,8 +341,9 @@
                     <p>Breakfast</p>
                   </div>
                   <div class="schedule_info">
-                   <h4>Breakfast Served </h4>
-                    <p>Room B of Bull Street Labs. Team mentors will also arrive at this time to assist teams in staying within scope and timeframe of the event, as well as to help guide teams in any technology they are using.</h4></p>
+                    <h4>Breakfast Served </h4>
+                    <p>Room B of Bull Street Labs. Team mentors will also arrive at this time to assist teams in staying within scope and timeframe of the event, as well as to help guide teams in any technology they are using.</h4>
+                    </p>
                   </div>
                 </div>
                 <div class="schedule_wrap">
@@ -348,7 +353,7 @@
                   <div class="schedule_info">
                     <h4>Projects Begin</h4>
                     <p>Teams begin work on projects if they haven't already. Mentors help guide initial phases.</p>
-</p>
+                    </p>
                   </div>
                 </div>
                 <div class="schedule_wrap">
@@ -361,10 +366,10 @@
                   </div>
                 </div>
 
-    <div class="schedule_wrap">
+                <div class="schedule_wrap">
                   <p class="schedule_time">12:30 <span>pm</span></p>
                   <div class="schedule_speaker_info">
-                  <p>Open Savannah Core Team</p>
+                    <p>Open Savannah Core Team</p>
                   </div>
                   <div class="schedule_info">
                     <h4>Pep Talk </p>
@@ -380,10 +385,10 @@
                     <p>Teams continue work on projects.</p>
                   </div>
                 </div>
-  <div class="schedule_wrap">
+                <div class="schedule_wrap">
                   <p class="schedule_time">7:00 <span>pm</span></p>
                   <div class="schedule_speaker_info">
-                  <p>Dinner</p>
+                    <p>Dinner</p>
                   </div>
                   <div class="schedule_info">
                     <h4>Dinner</h4>
@@ -402,7 +407,8 @@
                   </div>
                   <div class="schedule_info">
                     <h4>Rehearse, Review Before Pitch Session</h4>
-                    <p>Teams will be expected to begin rehearsing their 4-6 min. pitches are rehearsed, proposals reviewed by mentors and timing is perfected. Pitch decks, proposal document and any other requested material (prototypes) should be emailed to judging@hackforsavannah.org no later than noon.</p>
+                    <p>Teams will be expected to begin rehearsing their 4-6 min. pitches are rehearsed, proposals reviewed by mentors and timing is perfected. Pitch decks, proposal document and any other requested material (prototypes) should be emailed
+                      to judging@hackforsavannah.org no later than noon.</p>
                   </div>
                 </div>
 
@@ -429,34 +435,35 @@
 
 
 
-                   <div class="schedule_wrap">
+                <div class="schedule_wrap">
                   <p class="schedule_time">2:00<span>pm</span></p>
                   <div class="schedule_speaker_info">
                     <p>Judging</p>
                   </div>
                   <div class="schedule_info">
                     <h4>Judges Deliberate</h4>
-                    <p>Judges gather to score all project deliverables sent electronically in tandem with pitches. The top three pitches/proposals will be assessed independently, and awards given to top three (3) scoring teams based upon rubric criteria provided to teams at start of weekend. A separate winner will be selected for best working prototype. </p>
+                    <p>Judges gather to score all project deliverables sent electronically in tandem with pitches. The top three pitches/proposals will be assessed independently, and awards given to top three (3) scoring teams based upon rubric criteria
+                      provided to teams at start of weekend. A separate winner will be selected for best working prototype. </p>
                   </div>
                 </div>
- <div class="schedule_wrap">
+                <div class="schedule_wrap">
                   <p class="schedule_time">2:45<span>pm</span></p>
                   <div class="schedule_speaker_info">
                     <p>Awards</p>
                   </div>
                   <div class="schedule_info">
-                <h4>Awards Ceremony</h4>
+                    <h4>Awards Ceremony</h4>
                     <p>Winners of hackathon announced, verbal feedback provided by judges on why the winning teams succeeded and how projects could be improved upon.</p>
                   </div>
                 </div>
 
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="dark-layer"></div>
 </section>
@@ -485,7 +492,7 @@
             <small>Director/General Manager at Advanced Technology Development Center @ Georgia Tech</small>
             <p>Jen leads <a href="http://atdc.org">ATDC</a>’s programming on campus and throughout the state. Jen is a technology entrepreneur with 20 years of experience in information technology/software development, specializing in Web and mobile.
 
-</p>
+            </p>
           </div>
           <div class="speakers_follow_us">
             <ul>
@@ -495,14 +502,16 @@
               <li><a href="https://plus.google.com/114009346897549720493"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
             </ul>
           </div>
-        </div> </div>
+        </div>
+      </div>
       <div class="col-sm-6 col-md-6">
         <div class="speakers_wrap">
           <div class="our_speaker_img"> <img src="https://cvlassets.s3.amazonaws.com/chrisnichols.jpg" alt="image"> </div>
           <div class="speakers_info">
             <h5>Christopher Nichols</h5>
             <small>Lead Product Manager @ geothinQ</small>
-            <p>Chris leads the team for <a href="http://geothinq.com">geothinQ</a>, a Savannah-based startup that offers users a web application that makes land analysis simple and visual through mapping. Prior to his time working on geothinQ, he was the GIS Product Manager for Savannah-based firm Thomas and Hutton. </p>
+            <p>Chris leads the team for <a href="http://geothinq.com">geothinQ</a>, a Savannah-based startup that offers users a web application that makes land analysis simple and visual through mapping. Prior to his time working on geothinQ, he was the
+              GIS Product Manager for Savannah-based firm Thomas and Hutton. </p>
           </div>
           <div class="speakers_follow_us">
             <ul>
@@ -520,7 +529,8 @@
           <div class="speakers_info">
             <h5>Kevin Lawver</h5>
             <small>Chief Technology Officer @ Plantd</small>
-            <p> Kevin Lawver is the Chief Technical Officer at Planted, where he helps connect people with jobs at startups using code.  He’s the co-founder of TechSAV, organizer of the local RailsBridge chapter, runs Refresh Savannah, helps out where he can, advises startups on all kinds of stuff, and likes to bake.</p>
+            <p> Kevin Lawver is the Chief Technical Officer at Planted, where he helps connect people with jobs at startups using code. He’s the co-founder of TechSAV, organizer of the local RailsBridge chapter, runs Refresh Savannah, helps out where he can,
+              advises startups on all kinds of stuff, and likes to bake.</p>
           </div>
           <div class="speakers_follow_us">
             <ul>
@@ -537,7 +547,8 @@
           <div class="speakers_info">
             <h5>Yvonne Joffrault</h5>
             <small>Founder/CEO, TourBuddy Apps. Co-Founder, Flye. Principal, Blue Canyon Investments. </small>
-            <p>Yvonne is an institutional investment professional, turned tech entrepreneur, investor, and community catalyst. As CEO of TourBuddy Apps, she built a world class technology company that allows visitor destinations to easily create mobile app guides to improve their visitors' experience. Integral role in all company activities.</p>
+            <p>Yvonne is an institutional investment professional, turned tech entrepreneur, investor, and community catalyst. As CEO of TourBuddy Apps, she built a world class technology company that allows visitor destinations to easily create mobile app
+              guides to improve their visitors' experience. Integral role in all company activities.</p>
           </div>
           <div class="speakers_follow_us">
             <ul>
@@ -573,8 +584,9 @@
           <div class="speakers_info">
             <h5>Nick Palumbo</h5>
             <small>Founder, Smart Growth Savannah. President, Ardsley Park Neighborhood Association.</small>
-            <p>Nick leads the Ardsley Park Neighborhood Association, and is the founder of <a href="https://smartgrowthsavannah.wildapricot.org/">Smart Growth Savannah</a>,  an all volunteer organization dedicated to the promotion and development of great neighborhoods in Savannah and a Coalition partner of Smart Growth America.</p>
- </p>
+            <p>Nick leads the Ardsley Park Neighborhood Association, and is the founder of <a href="https://smartgrowthsavannah.wildapricot.org/">Smart Growth Savannah</a>, an all volunteer organization dedicated to the promotion and development of great
+              neighborhoods in Savannah and a Coalition partner of Smart Growth America.</p>
+            </p>
           </div>
           <div class="speakers_follow_us">
             <ul>
@@ -621,7 +633,8 @@
               </div>
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                  <p>For those who want to show their support and also participate in a meaningful way but who can't commit to the entire weekend, we have coordinated a shorter, low-level event with partner <a href="http://www.liveoakpl.org/">Live Oaks Public Library</a> on Bull Street, just a short walk from Bull Street Labs, to hold a community-wide "Wiki-thon" from 2:30 to 5:00 p.m. Saturday Sept. 23. Participants will be collaboratively building a mapped "local wiki" of locality knowledge. To sign up for the Wikithon, fill out <a href="https://pydisaup.paperform.co/">this short form.</a></p>
+                  <p>For those who want to show their support and also participate in a meaningful way but who can't commit to the entire weekend, we have coordinated a shorter, low-level event with partner <a href="http://www.liveoakpl.org/">Live Oaks Public Library</a>                    on Bull Street, just a short walk from Bull Street Labs, to hold a community-wide "Wiki-thon" from 2:30 to 5:00 p.m. Saturday Sept. 23. Participants will be collaboratively building a mapped "local wiki" of locality knowledge. To sign
+                    up for the Wikithon, fill out <a href="https://pydisaup.paperform.co/">this short form.</a></p>
                 </div>
               </div>
             </div>
@@ -633,7 +646,8 @@
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                  <p>If you don't have a laptop and would like to borrow one to use for the Hackathon, shoot an email to <a href="mailto: yall@opensavannah.org">yall@opensavannah.org</a> no later than Sept. 16. We will make every best effort to procure for you a loaner computer to use.</p>
+                  <p>If you don't have a laptop and would like to borrow one to use for the Hackathon, shoot an email to <a href="mailto: yall@opensavannah.org">yall@opensavannah.org</a> no later than Sept. 16. We will make every best effort to procure for
+                    you a loaner computer to use.</p>
                 </div>
               </div>
             </div>
@@ -645,9 +659,11 @@
               </div>
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
-                  <p>Bull Street Labs is located in the Starland District of midtown Savannah. If taking public transit, the closest bus routes include the 4 Line, which stops at Barnard and 38th Streets, and either the 14 or the 11 lines, both of which stop at Abercorn and 38th Street (one block away).</p>
+                  <p>Bull Street Labs is located in the Starland District of midtown Savannah. If taking public transit, the closest bus routes include the 4 Line, which stops at Barnard and 38th Streets, and either the 14 or the 11 lines, both of which
+                    stop at Abercorn and 38th Street (one block away).</p>
                   <p>
-If driving, be sure not to park in the lot directly opposite the building, as that is a private lot. Generally, there will be plenty of street parking available that no street cleaning will take place on during the weekend, and you should have little trouble finding a spot near the location.</p>
+                    If driving, be sure not to park in the lot directly opposite the building, as that is a private lot. Generally, there will be plenty of street parking available that no street cleaning will take place on during the weekend, and you should have little
+                    trouble finding a spot near the location.</p>
 
                 </div>
               </div>
@@ -661,7 +677,7 @@ If driving, be sure not to park in the lot directly opposite the building, as th
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                 <div class="panel-body">
                   <p>Absolutely not! We do require that all participants under the age of 21, however, allow organizers to place a bracelet on their arm during the reception denoting their underage status. </p>
-                     </div>
+                </div>
               </div>
             </div>
             <!--FAQ-5-->
@@ -671,9 +687,11 @@ If driving, be sure not to park in the lot directly opposite the building, as th
               </div>
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                 <div class="panel-body">
-                  <p>You have <em>absolutely</em> nothing to fear, and only knowledge to gain from participating in the hackathon. No one starts out in this world as a programming whiz; each of us has to learn somewhow. If you don't form a team ahead of time, we will make sure to place you with teammates with complimentary levels of technology acumen, pairing up new coders with professional developers and assigning dedicated Team Mentors to assist in the learning process.</p>
+                  <p>You have <em>absolutely</em> nothing to fear, and only knowledge to gain from participating in the hackathon. No one starts out in this world as a programming whiz; each of us has to learn somewhow. If you don't form a team ahead of
+                    time, we will make sure to place you with teammates with complimentary levels of technology acumen, pairing up new coders with professional developers and assigning dedicated Team Mentors to assist in the learning process.</p>
                   <p>
-Open Savannah aims to create a safe space for participants of all skill levels, sexes, races, creeds, political beliefs, sexual orientation and gender orientation. If you fear at any point that anyone in the hackathon is 'looking down on you' or not valuing what you have to contribute because of your skillset or because of any other reason, be certain to consult our <a href="https://opensavannah.org/codeofconduct">Code of Conduct</a>, and report <strong>any and all</strong> potential violations to the Core Leadership team by emailing <a href="mailto: yall@opensavannah.org">yall@opensavannah.org</a>. The report will be dealt with in a swift, discrete and professional manner.</p>
+                    Open Savannah aims to create a safe space for participants of all skill levels, sexes, races, creeds, political beliefs, sexual orientation and gender orientation. If you fear at any point that anyone in the hackathon is 'looking down on you' or not valuing
+                    what you have to contribute because of your skillset or because of any other reason, be certain to consult our <a href="https://opensavannah.org/codeofconduct">Code of Conduct</a>, and report <strong>any and all</strong>                    potential violations to the Core Leadership team by emailing <a href="mailto: yall@opensavannah.org">yall@opensavannah.org</a>. The report will be dealt with in a swift, discrete and professional manner.</p>
 
                 </div>
               </div>
@@ -729,17 +747,19 @@ Open Savannah aims to create a safe space for participants of all skill levels, 
           <div class="vertical_align_md"> <a href="#"><img src="https://s3.amazonaws.com/cvlassets/tFT3yPC7_400x400.jpg" alt="image"></a> </div>
         </div>
         <div class="item">
-          <div class="vertical_align_md"> <a href="http://savannahga.gov"><img src="https://s3.amazonaws.com/cvlassets/city-of-savannah-1%202.jpg" alt="image"></a> </div></div>
-<div class="item">
-          <div class="vertical_align_md"> <a href="#"><img src="https://s3.amazonaws.com/cvlassets/header_logo.png" alt="image"></a> </div>
-        </div></div>
-
-
+          <div class="vertical_align_md"> <a href="http://savannahga.gov"><img src="https://s3.amazonaws.com/cvlassets/city-of-savannah-1%202.jpg" alt="image"></a> </div>
         </div>
-
+        <div class="item">
+          <div class="vertical_align_md"> <a href="#"><img src="https://s3.amazonaws.com/cvlassets/header_logo.png" alt="image"></a> </div>
         </div>
       </div>
+
+
     </div>
+
+  </div>
+  </div>
+  </div>
   </div>
 </section>
 <!--/Conference Sponsors-->
@@ -749,8 +769,8 @@ Open Savannah aims to create a safe space for participants of all skill levels, 
   <div class="container">
     <div class="white_text div_zindex">
       <h2>Become a Sponsor</h2>
-        <p>Interested in helping be a part of Coastal Georgia's first ever civic hackathon in its history? We're still seeking donations and in-kind contributions from local businesses, especially local food service establishments and restaurants.</p>
-        <div class="space-30"></div>
+      <p>Interested in helping be a part of Coastal Georgia's first ever civic hackathon in its history? We're still seeking donations and in-kind contributions from local businesses, especially local food service establishments and restaurants.</p>
+      <div class="space-30"></div>
       <a href="https://cvlassets.s3.amazonaws.com/Copy-of-NDOCH17-Event-Guide-Sponsors.pdf" class="btn margin-btm-20">View Sponsorship Playbook</a>
       <a href="mailto: yall@opensavannah.org" class="btn margin-btm-20">Get Started Today</a>
     </div>

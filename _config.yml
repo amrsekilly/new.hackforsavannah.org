@@ -1,5 +1,37 @@
-# Site settings
+# Homepage Content
 title: Hack for Savannah - A National Day of Civic Hacking Event
+eventName: Hack for Savannah 2017
+eventDate: Sept. 22-24, 2017 @ Bull Street Labs
+opensavannahURL: https://opensavannah.org
+Eventbrite: https://www.eventbrite.com/countdown-widget?eid=37262881281
+conference_date: Sept. 22-24 @ 2222 Bull St.
+checkin: Check-in, kickoff reception and panel begins at 6:00 p.m. Friday.
+overviewImg: https://cvlassets.s3.amazonaws.com/0817-open_savannah_sav_maps-13.jpg
+openSavannahGH: https://github.com/opensavannah
+funTime: https://photos.app.goo.gl/D2hkIXsEdCM0twwO2
+creativePeople: https://www.meetup.com/OpenSavannah/members/
+civicHackathon: https://opensavannah.org/what-is-a-civic-hackathon
+codeForAmerica: http://codeforamerica.org
+savbook: https://savbook.io
+openbudgetsav: http://openbudgetsav.org
+email: yall@opensavannah.org
+twitterList: https://twitter.com/open_savannah/lists/open-savannah-leadership
+twitterWidget: //platform.twitter.com/widgets.js
+downloadSchedule: https://s3.amazonaws.com/cvlassets/hackforsavannah.pdf
+dayOneDate: Sept. 22, 2017
+dayTwoDate: Sept. 23, 2017
+dayThreeDate: Sept. 24, 2017
+
+
+spekers-tickets-info:
+  - title: 7 expert judges
+    icon: fa-microphone
+  - title: 100 ticket limit
+    icon: fa-ticket
+  - title: $6000 in cash prizes
+    icon: fa-money
+  - title: 1.5 days of hacking
+    icon: fa-calendar-check-o
 
 # Build settings
 markdown: kramdown
