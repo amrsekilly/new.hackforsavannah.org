@@ -1,21 +1,55 @@
+<!--map-->
+<div id="map">
+  <div id="js-gmap" class="gmap js-gmap"></div>
+</div>
+<!--map-->
+
+<!--Newsletter-->
+
+<!--/Newsletter-->
+
+<!--Footer-->
+<footer class="secondary-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-push-4 text-center">
+        <div class="footer_logo">
+            <a href="https://opensavannah.org"><img src="https://cvlassets.s3.amazonaws.com/open_sav_white_transparent_bg.png" width="150"></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-md-push-4">
+        <ul class="social_links">
+           <li><a href="http://meetup.com/opensavannah"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a></li>
+          <li><a href="http://facebook.com/opensavannah"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="http://twitter.com/open_savannah"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://instagram.com/opensavannah"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="http://github.com/opensavannah"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-4 col-md-pull-8">
+        <p>&copy; 2017, Open Savannah. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/footer-->
+<!--Back to top-->
+<div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
+<!--/Back to top-->
 <script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-105783295-1', 'auto');
   ga('send', 'pageview');
+
 </script>
 <!-- Scripts -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA724kt7SgY5UuPuhGvMl-dDi6VGitC6eY&callback=initMap" type="text/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA724kt7SgY5UuPuhGvMl-dDi6VGitC6eY&callback=initMap"
+  type="text/javascript"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/gmaps.min.js"></script>
