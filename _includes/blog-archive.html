@@ -52,18 +52,19 @@
         {% endfor %}
 
         <!-- pagination -->
+
+
         {% if paginator.total_pages > 1 %}
         <ul class="pagination pagination-lg">
-          {% if paginator.previous_page %}
-          <li class="page-item">
-            <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-          </li>
+
+          {% if paginator.page_trail %}
+            {% for trail in paginator.page_trail %}
+              <li {% if page.url == trail.path %} class="page-item active" {% else %} class="page-item" {% endif %}>
+                  <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+              </li>
+            {% endfor %}
           {% endif %}
-          {% if paginator.next_page %}
-          <li class="page-item">
-            <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-          </li>
-          {% endif %}
+
         </ul>
         {% endif %}
 
