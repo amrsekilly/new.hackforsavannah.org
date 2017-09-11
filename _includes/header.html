@@ -199,6 +199,66 @@
 <!-- Event Gallery -->
 
 
+<!-- Blog Teaser -->
+<section id="blog" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Heading -->
+      <div class="col-md-12">
+          <div class="heading-sec clearfix">
+            <div class="section-header text-center">
+              <h2>Latest News</h2>
+              <p>Event Industry Latest Updates</p>
+            </div>
+          </div>
+        </div>
+      <!-- /Heading -->
+
+      {% for post in site.posts | limit:3 %}
+      <div class="col-md-4 col-sm-4">
+          {% if post.video != null %}
+            <div class="blog_wrap view_one video_post">
+          {% endif %}
+          {% if post.blockquote != null %}
+            <div class="blog_wrap view_one quote_post">
+          {% else %}
+            <div class="blog_wrap view_one">
+          {% endif %}
+	      	<div class="blog_img margin-btm-20">
+            {% if post.img != null %}
+              <a href="{{ post.img }}"><img src="{{post.img}}" alt="image"></a>
+            {% endif %}
+
+            {% if post.video != null %}
+              <iframe class="mfp-iframe" src="{{post.video}}" allowfullscreen></iframe>
+            {% endif %}
+
+            {% if post.blockquote != null %}
+            <blockquote>
+              <p><i class="fa fa-quote-left"></i>{{post.blockquote}}<i class="fa fa-quote-right"></i></p>
+            </blockquote>
+            {% endif %}
+          </div>
+    	    <div class="blog_meta">
+                <p>Posted on {{ post.date | date_to_string }}</p>
+            </div>
+        	<h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+	        <p>
+            {% assign wordCount = post.content | strip_html | number_of_words %}
+            {{ post.content | strip_html | truncatewords: 30 }} <a class="read-more-link" href="{{ post.url | prepend: site.baseurl }}">{% if wordCount >= 30 %} <span>Continue Reading <i class="fa fa-arrow-right" aria-hidden="true"></i></span> {% endif %} </a>
+	        </p>
+         </div>
+      </div>
+      {% endfor %}
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
 <!-- About-Style-3 -->
 <section id="about" class="about_style3 section-padding">
   <div class="container">
@@ -730,7 +790,7 @@
             <tr>
               {% for sponsor in site.sponsors-row-1 %}
                   <td>
-                    <a href="{{sponsor.url}}"><img src="{{sponsor.img}}" alt="image"></a>
+                    <a href="{{sponsor.url}}"><img src="{{sponsor.img}}" alt="image" ></a>
                   </td>
               {% endfor %}
             </tr>
