@@ -4,6 +4,7 @@ title: Welcome to my blog
 author: Amr Elsekilly
 comments: true
 img: /assets/images/800x510.jpg
+tags: welcoming social test
 ---
 
  Hi there!
