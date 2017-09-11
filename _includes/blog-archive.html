@@ -15,7 +15,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <!-- article -->
         {% if post.video != null %}
           <article class="blog_wrap view_one video_post">
@@ -52,14 +52,21 @@
         {% endfor %}
 
         <!-- pagination -->
+        {% if paginator.total_pages > 1 %}
         <ul class="pagination pagination-lg">
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          {% if paginator.previous_page %}
+          <li class="page-item">
+            <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li class="page-item">
+            <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+          </li>
+          {% endif %}
         </ul>
+        {% endif %}
+
         <!-- /pagination -->
       </div>
 
