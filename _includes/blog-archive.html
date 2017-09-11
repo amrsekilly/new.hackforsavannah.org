@@ -27,7 +27,7 @@
         {% endif %}
           <div class="blog_img margin-btm-20">
             {% if post.img != null %}
-              <a href="#"><img src="{{post.img}}" alt="image"></a>
+              <a href="{{ post.img }}"><img src="{{post.img}}" alt="image"></a>
             {% endif %}
 
             {% if post.video != null %}
