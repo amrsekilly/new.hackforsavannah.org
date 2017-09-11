@@ -33,6 +33,31 @@ spekers-tickets-info:
   - title: 1.5 days of hacking
     icon: fa-calendar-check-o
 
+sponsors-row-1:
+  - img: https://cvlassets.s3.amazonaws.com/sedalogo.png
+    url: http://seda.org
+  - img: https://s3.amazonaws.com/lightning-carlvlewis/atdc-logo.png
+    url: http://atdc.org
+  - img: https://s3.amazonaws.com/cvlassets/Screen%20Shot%202017-09-01%20at%206.24.35%20PM.png
+    url: http://codebasesav.com
+  - img: http://oak.works/img/logos/oakworks.svg
+    url: http://oak.works
+
+
+sponsors-row-2:
+  - img: https://s3.amazonaws.com/cvlassets/creative-coast_1.jpg
+    url: http://creativecoast.organization
+  - img: https://s3.amazonaws.com/cvlassets/lopl.jpg
+    url: http://liveoakpl.org
+  - img: https://s3.amazonaws.com/cvlassets/tFT3yPC7_400x400.jpg
+    url: /
+  - img: https://s3.amazonaws.com/cvlassets/city-of-savannah-1%202.jpg
+    url: http://savannahga.gov
+
+sponsors-row-3:
+  - img: https://s3.amazonaws.com/cvlassets/header_logo.png
+    url: /
+
 # Build settings
 markdown: kramdown
 permalink: pretty
