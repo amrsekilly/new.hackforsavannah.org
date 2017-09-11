@@ -15,46 +15,41 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <!-- article-1 -->
-        <article class="blog_wrap view_one">
+        {% for post in site.posts %}
+        <!-- article -->
+        {% if post.video != null %}
+          <article class="blog_wrap view_one video_post">
+        {% endif %}
+        {% if post.blockquote != null %}
+          <article class="blog_wrap view_one quote_post">
+        {% else %}
+          <article class="blog_wrap view_one">
+        {% endif %}
           <div class="blog_img margin-btm-20">
-            <a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
-          </div>
-          <div class="blog_meta">
-            <p>Posted on October 30, 2016</p>
-          </div>
-          <h3><a href="#">The Standard chunk of Lorem Ipsum used since</a></h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-            mollitia animi, id est laborum et dolorum fuga.</p>
-        </article>
+            {% if post.img != null %}
+              <a href="#"><img src="{{post.img}}" alt="image"></a>
+            {% endif %}
 
-        <!-- article-2 -->
-        <article class="blog_wrap view_one video_post">
-          <div class="blog_img margin-btm-20">
-            <iframe class="mfp-iframe" src="https://www.youtube.com/embed/rqSoXtKMU3Q" allowfullscreen></iframe>
-          </div>
-          <div class="blog_meta">
-            <p>Posted on October 30, 2016</p>
-          </div>
-          <h3><a href="#">The Standard chunk of Lorem Ipsum used since</a></h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-            mollitia animi, id est laborum et dolorum fuga.</p>
-        </article>
+            {% if post.video != null %}
+              <iframe class="mfp-iframe" src="{{post.video}}" allowfullscreen></iframe>
+            {% endif %}
 
-        <!-- article-3 -->
-        <article class="blog_wrap view_one quote_post">
-          <div class="blog_img margin-btm-20">
+            {% if post.blockquote != null %}
             <blockquote>
-              <p><i class="fa fa-quote-left"></i> Pork loin leberkas ribeye capicola. Ribeye meatloaf sirloin shank, turkey pork loin salami. Flank strip steak shankle drumstick kevin rump tail chickeRibeye meatloaf sirloin shank. <i class="fa fa-quote-right"></i></p>
+              <p><i class="fa fa-quote-left"></i>{{post.blockquote}}<i class="fa fa-quote-right"></i></p>
             </blockquote>
+            {% endif %}
           </div>
           <div class="blog_meta">
-            <p>Posted on October 30, 2016</p>
+            <p>Posted on {{ post.date | date_to_string }}</p>
           </div>
-          <h3><a href="#">The Standard chunk of Lorem Ipsum used since</a></h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-            mollitia animi, id est laborum et dolorum fuga.</p>
+          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <p>
+            {% assign wordCount = post.content | strip_html | number_of_words %}
+            {{ post.content | strip_html | truncatewords: 30 }} <a class="read-more-link" href="{{ post.url | prepend: site.baseurl }}">{% if wordCount >= 30 %} <span>Continue Reading <i class="fa fa-arrow-right" aria-hidden="true"></i></span> {% endif %} </a>
+          </p>
         </article>
+        {% endfor %}
 
         <!-- pagination -->
         <ul class="pagination pagination-lg">
@@ -108,7 +103,7 @@
                 </li>
                 <li>
                   <div class="widget_post_img">
-                    <a href="#"><img src="assets/images/800x510.jpg" alt="image"></a>
+                    <a href="#"><img src="" alt="image"></a>
                   </div>
                   <div class="widget_post_info">
                     <h6><a href="#">The Standard chunk of Lorem Ipsum </a></h6>
