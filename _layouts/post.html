@@ -76,79 +76,33 @@ layout: page
 
         <!--Comments-->
         <div class="articale_comments">
+          {% if page.comments %}
           <div id="comments">
-            <h5 class="block-head">3 Comments</h5>
             <ul class="commentlist">
-              <li class="comment">
-                <div class="comment-body">
-                  <div class="comment-author">
-                    <span class="fn">DereckNency Paul</span>
-                  </div>
-                  <div class="comment-meta commentmetadata"> <a href="#">November 23, 2016 at 12:52 pm</a> </div>
-                  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem</p>
-                  <div class="reply">
-                    <a href="#" class="btn-link"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a>
-                  </div>
-                </div>
-              </li>
+              <div id="disqus_thread"></div>
+              <script>
 
-              <li class="comment">
-                <div class="comment-body">
-                  <div class="comment-author">
-                    <img class="avatar" src="assets/images/90x90.jpg" alt="image">
-                    <span class="fn">John Smith</span>
-                  </div>
-                  <div class="comment-meta commentmetadata"> <a href="#">November 23, 2016 at 12:52 pm</a> </div>
-                  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem</p>
-                  <div class="reply">
-                    <a href="#" class="btn-link"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a>
-                  </div>
-                </div>
-
-                <ul class="children">
-                  <li class="comment">
-                    <div class="comment-body">
-                      <div class="comment-author">
-                        <img class="avatar" src="assets/images/90x90.jpg" alt="image">
-                        <span class="fn">John Smith</span>
-                      </div>
-                      <div class="comment-meta commentmetadata"> <a href="#">November 23, 2016 at 12:52 pm</a> </div>
-                      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                        exercitationem</p>
-                      <div class="reply">
-                        <a href="#" class="btn-link"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://hackforsavannah.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </ul>
           </div>
-        </div>
+          {% endif %}
 
-
-        <!--Comments-Form-->
-        <div class="comment-respond">
-          <h5 class="block-head">Leave A Comment</h5>
-          <form action="" method="get" class="comment-form">
-            <div class="form-group">
-              <input name="" type="text" class="form-control" placeholder="Full Name">
-            </div>
-
-            <div class="form-group">
-              <input name="" type="email" class="form-control" placeholder="Email Address">
-            </div>
-
-            <div class="form-group">
-              <textarea class="form-control" name="" cols="" rows="4" placeholder="Comment"></textarea>
-            </div>
-
-            <div class="form-group">
-              <button class="btn" type="submit">Post Comment</button>
-            </div>
-          </form>
         </div>
       </div>
 
