@@ -146,7 +146,31 @@
               <ul class="list-style-none">
                 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
                   {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-                  <li id="{{ this_word | cgi_escape }}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ this_word }}</li>
+
+
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{item}}"><li id="{{ this_word | cgi_escape }}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ this_word }}</li></a>
+                        </h4>
+                      </div>
+                      <div id="collapse{{item}}" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          {% for post in site.tags[this_word] %}{% if post.title != null %}
+                            <div>
+                              <span style="float: left;">
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                              </span>
+                              <span style="float: right;">
+                                {{ post.date | date_to_string }}
+                              </span>
+                            </div>
+                            <div style="clear: both;"></div>
+                          {% endif %}{% endfor %}
+                        </div>
+                      </div>
+                    </div>
                 {% endunless %}{% endfor %}
 
 
