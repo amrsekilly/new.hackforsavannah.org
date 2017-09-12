@@ -19,7 +19,14 @@ layout: page
     <div class="row">
       <div class="col-md-8">
         <!-- article-1 -->
-        <article class="blog_wrap view_one">
+        {% if page.video != null %}
+          <article class="blog_wrap view_one video_post">
+        {% endif %}
+        {% if page.blockquote != null %}
+          <article class="blog_wrap view_one quote_post">
+        {% else %}
+          <article class="blog_wrap view_one">
+        {% endif %}
           <div class="blog_meta">
             <p>Posted on <strong>{{ page.date | date: "%B %-d, %Y" }}</strong></p>
             <div class="inline-div btn-group-xs categories_in">
@@ -173,7 +180,7 @@ layout: page
             </div>
           </div> -->
 
-          
+
         </div>
       </aside>
 
