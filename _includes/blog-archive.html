@@ -146,8 +146,6 @@
               <ul class="list-style-none">
                 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
                   {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-
-
                   <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                       <div class="panel-heading">
@@ -172,17 +170,6 @@
                       </div>
                     </div>
                 {% endunless %}{% endfor %}
-
-
-
-                <!-- <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Unique Venues</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Fresh Event Tips</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Event Marketing</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Event Planning</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Family Events</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Special Events</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Unique Venues</a></li>
-                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Fresh Event Tips</a></li> -->
               </ul>
             </div>
           </div>
